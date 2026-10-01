@@ -187,6 +187,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4716409360353255029, guid: fbefa9d369518ec4e97975de1961b23b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 202643688}
+    - targetCorrespondingSourceObject: {fileID: 4716409360353255029, guid: fbefa9d369518ec4e97975de1961b23b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 202643690}
     - targetCorrespondingSourceObject: {fileID: 7968332218869082256, guid: fbefa9d369518ec4e97975de1961b23b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 202643679}
@@ -196,6 +199,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7968332218869082256, guid: fbefa9d369518ec4e97975de1961b23b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 202643685}
+    - targetCorrespondingSourceObject: {fileID: 7968332218869082256, guid: fbefa9d369518ec4e97975de1961b23b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 202643687}
   m_SourcePrefab: {fileID: 100100000, guid: fbefa9d369518ec4e97975de1961b23b, type: 3}
 --- !u!1 &202643676 stripped
 GameObject:
@@ -242,10 +248,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202643687}
+        m_TargetAssemblyTypeName: DeerHoverHighlight, Assembly-CSharp
+        m_MethodName: HighlightOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202643687}
+        m_TargetAssemblyTypeName: DeerHoverHighlight, Assembly-CSharp
+        m_MethodName: HighlightOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -370,10 +400,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202643690}
+        m_TargetAssemblyTypeName: DeerHoverHighlight, Assembly-CSharp
+        m_MethodName: HighlightOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202643690}
+        m_TargetAssemblyTypeName: DeerHoverHighlight, Assembly-CSharp
+        m_MethodName: HighlightOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -421,6 +475,11 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
+--- !u!23 &202643683 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 950686937121550226, guid: fbefa9d369518ec4e97975de1961b23b, type: 3}
+  m_PrefabInstance: {fileID: 202643675}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &202643685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,6 +493,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeerInfoToggle
   infoPanel: {fileID: 1840069407}
+--- !u!23 &202643686 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2508709532703185271, guid: fbefa9d369518ec4e97975de1961b23b, type: 3}
+  m_PrefabInstance: {fileID: 202643675}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &202643687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202643676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77db59925b7a53e4c843012e67e11711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeerHoverHighlight
+  deerRenderer: {fileID: 202643683}
+  hoverColor: {r: 0.4117647, g: 0.8235294, b: 1, a: 1}
+  emissionIntensity: 2.5
 --- !u!114 &202643688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,6 +526,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeerInfoToggle
   infoPanel: {fileID: 1840069407}
+--- !u!114 &202643690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202643677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77db59925b7a53e4c843012e67e11711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeerHoverHighlight
+  deerRenderer: {fileID: 202643686}
+  hoverColor: {r: 0.41037738, g: 0.82491565, b: 1, a: 1}
+  emissionIntensity: 2.5
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
