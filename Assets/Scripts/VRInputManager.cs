@@ -63,6 +63,9 @@ public class VRInputManager
     public bool RightSecondaryPressed =>
         rightSecondaryButton.IsPressed();
 
+    public bool RightPrimaryTriggered =>
+    rightPrimaryButton.WasPressedThisFrame();
+
     public Vector2 RightJoystick =>
         rightJoystick.ReadValue<Vector2>();
 
