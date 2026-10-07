@@ -1,9 +1,9 @@
-# 默认忽略的文件
+# Default ignored files
 /shelf/
 /workspace.xml
-# 基于编辑器的 HTTP 客户端请求
+# Editor-based HTTP Client requests
 /httpRequests/
-# Rider 忽略的文件
+# Rider ignored files
 /modules.xml
 /contentModel.xml
 /projectSettingsUpdater.xml
