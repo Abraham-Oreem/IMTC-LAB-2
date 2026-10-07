@@ -801,7 +801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1201475814192831535, guid: 5490dd57690e244f8a0c51580a0ac6c1, type: 3}
       propertyPath: m_Name
-      value: Cube (1)
+      value: IInteractable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
