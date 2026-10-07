@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainGameplay.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/MainGameplay-lucas.unity
-    guid: 59edc0bddbdeba042a266d9a7d41c371
+    path: Assets/Scenes/StarrySky.unity
+    guid: c561e504adb3f0c4596b60fef222b90b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f59592eb313753d48bf2273051b097dd, type: 2}
