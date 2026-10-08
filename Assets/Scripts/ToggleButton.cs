@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ToggleButton : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class ToggleButton : MonoBehaviour
                 currentSkybox = 1;
 
             SetSkybox();
+        }
+        if(GameManager.Instance.Input.RightSecondaryTriggered){
+            SceneManager.LoadScene(0);
         }
     }
 
