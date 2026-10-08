@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text inputDebugText;
 
     public VRInputManager Input { get; private set; }
+    private InputActionMap vrMap;
 
 
     private void Awake()
@@ -24,10 +25,9 @@ public class GameManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
 
 
-        InputActionMap vrMap = inputActions.FindActionMap("Controllers", true);
+        vrMap = inputActions.FindActionMap("Controllers", true);
 
         Input = new VRInputManager(vrMap);
     }
@@ -50,6 +50,15 @@ public class GameManager : MonoBehaviour
             InputActionMap vrMap = inputActions.FindActionMap("Controllers", true);
             vrMap.Disable();
         }
+    }
+
+    private void OnDestroy()
+    {
+        if (vrMap != null)
+            vrMap.Disable();
+
+        if (Instance == this)
+            Instance = null;
     }
 
     // void Update()
